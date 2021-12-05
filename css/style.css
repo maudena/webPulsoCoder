@@ -5,48 +5,75 @@
 *{
     margin: 0%;
     padding: 0%;
+    font-size: 62.5%;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    min-width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "header header header header" 
+    "who who who who"
+    "news news news news"
+    "clientes clientes clientes clientes"
+    "footer footer footer footer"
+    ;
 }
 
+
+/*---------------HEADER Y NAV---------------*/
 
 .header{
-    width: 98.45vw;
-    height: 12rem;
+    grid-area: header;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3, 1fr);
     background-color: black;
-    border-bottom: solid 2px rgb(148, 20, 20);
-}
-.nav{
-    display: grid;
+    height: 40vh;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    grid-column: 1/4;
+    border-bottom: solid 2px rgb(148, 20, 20);
+
+}
+.logoHeader{
+    grid-column: 2/3;
     grid-row: 1/4;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.logo{
+    padding: .3em .3em .3em .3em;
+    border-radius: 50%;
+    height:  125em;
+}
+
+.nav{
+    grid-row: 2/3;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-between;
 }
 .nav ul{
     list-style: none;
     display: flex;
-    font-size: 23px;
+    font-size: 35em;
     font-family: 'Barlow', sans-serif;
-    justify-content: space-between;
-}
-.left{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    justify-content: center;
-    margin-left: 30px;
-    
 }
 
-.right{
-    margin-right: 30px;
-    grid-column: 3/4;
-    grid-row: 2/3;
-    justify-content: center;
+.left, .right{
+    width: 35%;
+    align-self: center;
+    margin-left: 5em;
+    margin-right: 5em;
+    
 }
-.left ul{
+.left ul, .right ul{
     display: flex;
     justify-content: space-between;
     transition: all 1s;
@@ -57,241 +84,175 @@
     border: solid 2px;
     border-radius: 5%;
     padding: 2px 5px 4px 5px;
+    
 }
 .left li:hover , .right li:hover{
     transform: scale(1.1);
 }
 
-.logoHeader, .logoHeaderServicios, .logoHeaderContacto {
-    height:  10rem;
-    background-color: black;
-    padding: .3em .3em .3em .3em;
-    border-radius: 50%;
-    display: flex;
-    grid-column: 2/3;
-    grid-row: 1/4;
-    justify-content: center;
-    justify-self: center;
-    margin-top: .5em;
-}
+/*---------------QUIENES SOMOS---------------*/
 
-
-.main{
-    
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap:10px;
-    width: 98.45vw;
-    height: 240vh;
-
+#who{
+    grid-area: who;
 }
 .title{
-    grid-column: 1/5;
-    grid-row: 1/2;
-    font-size: 56px;
+
+    display: flex;
+    font-size: 15em;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 600;
-    display: flex;
     justify-content: center;
 }
-#who{
-    grid-column: 1/5;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5,1fr);
-    height: 50vh;
-    grid-gap: 10px;
-    background-color: rgb(231, 209, 180);
-    border-radius: 50%;
-    margin-left: 20px;
-    margin-right: 20px;
+
+.whoContainer{
+    display: flex;
+    justify-content: space-between;
 }
 .who{
-    font-size: 30px;
+    font-size: 20em;
     font-family: 'Abel', sans-serif;
-    grid-column: 1/4;
-    display: flex;
-    justify-content: center;
-    
-}
-#news{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(6,1fr);
-    grid-column: 1/5;
-    grid-gap: 5px;
-    height: 100vh;
-    background-color: rgb(231, 209, 180);
-    border-radius: 50%;
-
-}
-#clientes{
-    grid-column: 1/5;
-    grid-template-rows: 1/2;
-    background-color: rgb(231, 209, 180);
-    border-radius: 50%;
-
-}
-#footer{
-    grid-column: 1/5;
-    grid-template-rows: 1/2;
-}
-.videoHome{
-    grid-column: 4/5;
-    grid-row: 1/6;
-    margin-right: 30px;
+    text-align: center;
 }
 .whoTexto{
-    grid-column: 1/4;
-    grid-row: 2/6;
     font-family: 'Advent Pro', sans-serif;
-    font-size: 26px;
-    display: flex;
-    justify-content: center;
+    font-size: 15em;
     text-align: center;
 }
 
+/*---------------NOVEDADES---------------*/
+
+#news{
+    grid-area: news;
+}
 .news{
-    grid-column: 1/5;
-    grid-row: 1/2;
-    font-size: 30px;
+    font-size: 10em;
     font-family: 'Abel', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
-.fotoHome1{
-    grid-column: 1/2;
-    grid-row: 2/5;
-    width: 250px;
-    height: 300px;
-    justify-self: center;
-    border-radius: 5%;
+.fotosContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 8em;
+    margin-left: 8em;
 }
-.fotoHome2{
-    grid-column: 2/3;
-    grid-row: 2/5;
-    width: 250px;
-    height: 300px;
-    justify-self: center;
-    border-radius: 5%;
-}
-.fotoHome3{
-    grid-column: 3/4;
-    grid-row: 2/5;
-    width: 250px;
-    height: 300px;
-    justify-self: center;
-    border-radius: 5%;
-}
-.fotoHome4{
-    grid-column: 4/5;
-    grid-row: 2/5;
-    width: 250px;
-    height: 300px;
-    justify-self: center;
-    border-radius: 5%;
-}
-.newsUl{
-    grid-column: 1/5;
-    grid-row: 5/7;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-gap: 10px;
-    text-decoration: none;
-    list-style: none;
-    justify-content: center;
+.newsTexto{
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     font-family: 'Advent Pro', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 10em;
+    height: 8em;
 }
+.fotoNews1{
+    width: 150em;
+    height: 200em;
+    border-radius: 5%;
+}
+.fotoNews2{
+
+    width: 150em;
+    height: 200em;
+    border-radius: 5%;
+}
+.fotoNews3{
+    width: 150em;
+    height: 200em;
+    border-radius: 5%;
+}
+.fotoNews4{
+    
+    width: 150em;
+    height: 200em;
+    border-radius: 5%;
+
+}
+
+/*---------------CLIENTES---------------*/
+
 #clientes{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(6,1fr);
-    height: 60vh;
-    grid-gap: 15px;
+    grid-area: clientes;
 }
 .clientes{
     display: flex;
-    grid-column: 1/5;
-    grid-row: 1/2;
     justify-content: center;
     font-family: 'Abel', sans-serif;
-    font-size: 30px;
+    font-size: 10em;
 }
-.imgClientes{
-    grid-column: 1/3;
-    grid-row: 2/6;
-    border-radius: 5%;
-    margin-left: 30px;
+.clientesContainer{
+    display: flex;
+    justify-content: space-between;
 }
 .textoClientes{
-    grid-column: 3/5;
-    grid-row: 2/6;
     font-family: 'Advent Pro', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 10em;
     display: flex;
+    justify-content: center;
     text-align: center;
-    align-self: center;
+    align-items: center;
+}
+.imgClientes{
+    border-radius: 5%;
 }
 
+/*---------------FOOTER---------------*/
+
 .foot{
-    border-top: solid 2px rgb(148, 20, 20)  ;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-area: footer;
+    border-top: solid 2px rgb(148, 20, 20);
     height: 25vh;
-    grid-gap:10px;
     background-color: #000;
 }
 .social{
     color: #ffffff;
-    grid-column: 1/5;
-    grid-row: 1/2;
     font-family: 'Abel', sans-serif;
-    font-size: 30px;
+    font-size: 8em;
     display: flex;
     justify-content: center;
     
 }
 .socialLinks-container{
-    grid-column: 2/4;
-    grid-row:2/3;
+    display: flex;
+    justify-content: center;
 }
+
 .textoSocial{
     color: #ffffff;
     display: flex;
-    grid-column: 2/4;
-    grid-row: 3/4;
     font-family: 'Advent Pro', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 4em;
     text-align: center;
+    justify-content: center;
 }
 .socialLinks{
     list-style-type: none;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
+    width: 30%;
     
 }
 .socialLinks li a{
     text-decoration: none;
-    font-size: 28px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    font-size: 30em;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
     text-align: center;
     background: #0ea4be;
     color: #ffffff;
     border-radius: 50%;
 }
 
-
-
+@media screen and (max-width:768px){
+    
+    .main{
+        display: grid;
+        grid-template-areas: 
+        "who who"
+        "news news"
+        "clientes clientes"
+        "footer footer";
+    
+    }
+}
