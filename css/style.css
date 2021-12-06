@@ -252,22 +252,26 @@ html{
 /*            <---------------S E R V I C I O S--------------->             */
 
 .servContainer{
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40em 10em 10em 55em 10em 55em 10em 55em 25em;
-    gap: 2em;
     min-height: 100%;
     min-width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "title title title title"
+    "serv1 serv1 serv1 serv1"
+    "serv2 serv2 serv2 serv2"
+    "serv3 serv3 serv3 serv3"
+    "footer footer footer footer"
+    ;
+    gap: 2em;
+    
 }
-.header{
-    grid-column: 1/5;
-    grid-row: 1/2;
+header{
+    grid-area: header;
 }
 
 .titleServicios{
-    grid-column: 2/4;
-    grid-row: 2/3;
+    grid-area: title;
     display: flex;
     font-size: 10em;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -275,9 +279,10 @@ html{
     justify-content: center;
     text-align: center;
 }
+.serv1{
+    grid-area: serv1;
+}
 .subServicio1{
-    grid-column: 2/4;
-    grid-row: 3/4;
     display: flex;
     justify-content: center;
     font-family: 'Abel', sans-serif;
@@ -286,66 +291,62 @@ html{
 }
 .imgServicios1{
     display: flex;
-    grid-column: 3/5;
-    grid-row: 4/5;
     margin-right: 6em;
     border-radius: 5%;
     justify-content: center;
 }
 .textServicio1{
-    grid-column: 1/3;
-    grid-row: 4/5;
+    
     font-family: 'Advent Pro', sans-serif;
     font-size: 5em;
     display: flex;
     justify-content: center;
     text-align: center;
 }
+.serv2{
+    grid-area: serv2;
+}
 
 .subServicio2{
-    grid-column: 2/4;
-    grid-row: 5/6;
+    
     display: flex;
     justify-content: center;
     font-family: 'Abel', sans-serif;
     font-size: 6em;
 }
 .imgServicios2{
-    grid-column: 1/3;
-    grid-row: 6/7;
+    
     display: flex;
     margin-left: 5em;
     border-radius: 5%;
     justify-content: center;
 }
 .textServicio2{
-    grid-column: 3/5;
-    grid-row: 6/7;
+    
     font-family: 'Advent Pro', sans-serif;
     font-size: 5em;
     display: flex;
     justify-content: center;
     text-align: center;
 }
+.serv3{
+    grid-area: serv3;
+}
 
 .subServicio3{
-    grid-column: 2/4;
-    grid-row: 7/8;
-    display: flex;
+    
+    display: flex ;
     justify-content: center;
     font-family: 'Abel', sans-serif;
     font-size: 6em;
 }
 .imgServicios3{
-    grid-column: 3/5;
-    grid-row: 8/9;
+    
     display: flex;
     border-radius: 5%;
     justify-content: center;
 }
 .textServicio3{
-    grid-column: 1/3;
-    grid-row: 8/9;
     font-family: 'Advent Pro', sans-serif;
     font-size: 5em;
     display: flex;
@@ -414,62 +415,63 @@ html{
         "footer footer";
             
     } 
-    
-    
     .servContainer{
             width: 100%;
-            grid-template-columns: 100%;
-            grid-template-rows: 34em 12em 10em 55em 10em 10em 55em 10em 10em 55em 10em 21em;
+            grid-template-areas: 
+            "header"
+            "title"
+            "serv1"
+            "serv2"
+            "serv3"
+            "footer"
+            ;
+
         }
         .titleServicios{
-            grid-column: 1/2;
-            grid-row: 2/3;
+            grid-area: title;
         }
-        .subServicio1{
-            grid-column: 1/2;
-            grid-row: 3/4;
+        .serv1{
+            grid-area: serv1;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
         }
-        .imgServicios1{
-            grid-column: 1/2;
-            grid-row: 4/5;  
+
+        .serv2{
+            grid-area: serv2;
+          
         }
-        .textServicio1{
-            grid-column: 1/2;
-            grid-row: 5/6; 
+        .serv3{
+            grid-area: serv3;
         }
+            
         .subServicio2{
-            grid-column: 1/2;
-            grid-row: 6/7;
+            
         }
         .imgServicios2{
-            grid-column: 1/2;
-            grid-row: 7/8;
+            
          
         }
         .textServicio2{
-            grid-column: 1/2;
-            grid-row: 8/9;
+          
             
         }
         
         .subServicio3{
-            grid-column: 1/2;
-            grid-row: 9/10;
+          
             
         }
         .imgServicios3{
-            grid-column: 1/2;
-            grid-row: 10/11;
+            
             
         }
         .textServicio3{
-            grid-column: 1/2;
-            grid-row: 11/12;
+            
         
             
         }
         .foot{
-            grid-row: 12/13 ;
+            grid-area: footer;
         }
         
 }
