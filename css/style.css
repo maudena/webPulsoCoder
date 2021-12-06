@@ -416,7 +416,6 @@ header{
             
     } 
     .servContainer{
-            width: 100%;
             grid-template-areas: 
             "header"
             "title"
