@@ -11,12 +11,14 @@
 </head>
 <body>
     <header class="header">
-        <!--LOGO--> 
-        <img class="logoHeader" src="imagenes/Logo-03.png" alt="">
-          
+
+        <div class="logoHeader">
+            <img class="logo" src="imagenes/Logo-03.png" alt=""> <!--LOGO-->
+        </div>
+
         <!-- MENU NAVEGACION --> 
           
-          <nav class="nav">
+        <nav class="nav">
             <div class="left">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -32,55 +34,58 @@
                     <li><a href="Contacto.html">Contacto</a></li>
                 </ul>
             </div>
-      </nav>
-      </header>
-      <section class="containerContacto">
-            <h1 class="titleContacto">C O N T A C T O</h1>
+        </nav>
+    </header>
+
+
+        <h1 class="titleContacto">C O N T A C T O</h1>
             <p class="textoContacto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero asperiores laudantium obcaecati nemo voluptate, ipsam repellendus error tempore modi amet eius molestiae aliquam magnam in aliquid sequi delectus adipisci provident.</p>
         
-            <form class="formContainer" action="">
-                <div>
+        <form class="formContainer" action="">
+                <div class="nombreContacto">
                     <label for="nombre">Nombre: </label>
                     <input type="text" name="nombre" id="nombre">
                 </div>
-                <div>
+                <div class="apeContacto">
                     <label for="apellido">Apellido: </label>
                     <input type="text" name="apellido" id="apellido">
                 </div>
-                <div>
+                <div class="emailContacto">
                     <label for="email">Email: </label>
                     <input type="email" name="email" id="email">
                 </div>
-                <div>
+                <div class="telContacto">
                     <label for="telefono">Telefono: </label>
                     <input type="number" name="telefono" id="telefono">
                 </div>
 
-                <div>
+                <div class="boxConsulta">
                     <label for="consulta">Dejanos tu consulta: </label>
-                    <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                    <textarea name="consulta" id="consulta" cols="100" rows="10"></textarea>
                 </div>
-                <div>Recibir novedades vía mail
+                <div class="checkContacto">
+                    <p>Recibir novedades vía mail</p>
                     <input type="checkbox" name="recibir" value="1">
                 </div>
-                <div>
+                <div class="botonesContacto">
                     <input type="submit">
                     <input type="reset" value="Restablecer">
                 </div>
             
-            </form>
-      </section>
-      <footer class="footContacto">
-        <h2 class="socialContacto">Redes Sociales</h2>
-        <div class="socialLinks-containerContacto">
-            <ul class="socialLinksContacto">
-                <li><a href="#" class="fa fa-facebook"></a></li>  
-                <li><a href="#" class="fa fa-instagram"></a></li>    
-                <li><a href="#" class="fa fa-linkedin"></a></li>
-                <li><a href="#" class="fa fa-pinterest"></a></li>
-            </ul>
-        </div>
-        <p class="textoSocialServicios">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto explicabo fugiat vitae odit autem qui vero nemo assumenda sapiente? Aliquam beatae ullam impedit unde totam sequi minus deserunt tempore veniam.</p>
+        </form>
+    
+
+    <footer class="foot">
+            <h2 class="social">Redes Sociales</h2>
+            <div class="socialLinks-container">
+                <ul class="socialLinks">
+                    <li><a href="#" class="fa fa-facebook"></a></li>  
+                    <li><a href="#" class="fa fa-instagram"></a></li>    
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                    <li><a href="#" class="fa fa-pinterest"></a></li>
+                </ul>
+            </div>
+            <p class="textoSocial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto explicabo fugiat vitae odit autem qui vero nemo assumenda sapiente? Aliquam beatae ullam impedit unde totam sequi minus deserunt tempore veniam.</p>
     </footer>
 </body>
 </html>
