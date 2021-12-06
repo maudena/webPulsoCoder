@@ -31,9 +31,8 @@ html{
 .header{
     grid-area: header;
     display: grid;
-    /*background: rgb(0,0,0);
-    background: linear-gradient(338deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9780287114845938) 50%, rgba(255,0,0,1) 100%);
-    */
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 70%, rgba(255,0,0,1) 100%);
     background-color: black;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
