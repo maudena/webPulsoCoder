@@ -60,12 +60,14 @@ html{
     grid-column: 1/5;
     display: flex;
     justify-content: space-between;
+    
 }
 .nav ul{
     list-style: none;
     display: flex;
     font-size: 35em;
     font-family: 'Barlow', sans-serif;
+    
 }
 
 .left, .right{
@@ -73,6 +75,7 @@ html{
     align-self: center;
     margin-left: 5em;
     margin-right: 5em;
+    
     
 }
 .left ul, .right ul{
@@ -355,17 +358,26 @@ header{
 }
 .foot{
     grid-area: footer;
-    grid-column: 1/5;
-    grid-row: 9/10;
+    
 }
 
 
 
-/*---------------C O N T A C T O---------------*/
+/*            <---------------C O N T A C T O--------------->             */
 
-
+.container-Contacto{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "titleContacto"
+    "textoContacto"
+    "formContacto"
+    "footer"
+    ;
+}
 
 .titleContacto{
+    grid-area: titleContacto;
     display: flex;
     font-size: 10em;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -374,6 +386,7 @@ header{
     text-align: center;
 }
 .textoContacto{
+    grid-area: textoContacto;
     font-family: 'Advent Pro', sans-serif;
     font-size: 3.5em;
     display: flex;
@@ -381,6 +394,7 @@ header{
     text-align: center;
 }
 .formContainer{
+    grid-area: formContacto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 2em 2em 5em 2em 2em;
@@ -397,11 +411,6 @@ header{
     align-self: center;
 }
 
-
-@media screen and (max-width:768px){
-    
-    
-}
 
 @media screen and (max-width:768px) {
     
@@ -442,32 +451,6 @@ header{
         }
         .serv3{
             grid-area: serv3;
-        }
-            
-        .subServicio2{
-            
-        }
-        .imgServicios2{
-            
-         
-        }
-        .textServicio2{
-          
-            
-        }
-        
-        .subServicio3{
-          
-            
-        }
-        .imgServicios3{
-            
-            
-        }
-        .textServicio3{
-            
-        
-            
         }
         .foot{
             grid-area: footer;
