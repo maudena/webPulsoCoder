@@ -16,6 +16,7 @@ html{
 }
 
 
+
                                 /*---------------H E A D E R  Y  N A V---------------*/
 
 
@@ -82,6 +83,7 @@ html{
     font-size: 1.2em;
     text-align: center;
 }
+
                                 /*---------------C L I E N T E S---------------*/
 
 #clientes{
@@ -128,9 +130,10 @@ html{
     text-align: center;
     align-items: center;
 }
-.imgServicios3, .imgServicios1{
+.imgServicios1,.imgServicios2, .imgServicios3{
     margin-bottom: 2em;
     margin-top: 2em;
+    width: 100%;
 }
 
                                 /*---------------C O N T A C T O---------------*/
@@ -196,4 +199,18 @@ html{
     background: #0ea4be;
     color: #ffffff;
     border-radius: 50%;
+}
+a:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:425px){
+
+    .title{
+        font-size: 3.2em;
+    }
+    .socialLinks{
+        width: 60%;
+    }
+    
 }
