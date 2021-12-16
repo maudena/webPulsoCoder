@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+@import "variables";
+@import "header";
+@import "footer";
+@import "mediaqueries";
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+  
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+.homeContainer{
+    min-width: 100%;
+}
+a{
+   &:hover{
+    transform: scale(1.1)
+   } 
+}
+@mixin texto {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+@mixin title {
+    display: flex;
+    font-size: 4.2em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 1em;
+    
+}
+                                /*---------------Q U I E N E S  S O M O S---------------*/
+.title{
+    @include title;
+}
+#who{
+    margin-bottom: 1.5em;
+}
+.who{
+    font-size: 2.5em;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+.whoTexto{
+    @include texto;
+}
+
+                                /*---------------N O V E D A D E S---------------*/
+
+#news{
+    margin-bottom: 1.5em;
+}
+.news{
+    font-size: 2.5em;
+    font-family: 'Abel', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.listaNews1, .listaNews2, .listaNews3, .listaNews4{
+    @include texto;
+}
+
+                                /*---------------C L I E N T E S---------------*/
+
+#clientes{
+    margin-bottom: 1em;
+}                              
+.clientes{
+    font-size: 2.5em;
+    font-family: 'Abel', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.textoClientes{
+    @include texto;
+}
+
+                                /*---------------S E R V I C I O S---------------*/
+
+.titleServicios{
+    @include title;
+}
+.subServicio{
+    display: flex;
+    justify-content: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 2.5em;
+}
+.subServicio2, .subServicio3{
+    @extend .subServicio
+}
+.textoServ{
+
+    @include texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgServicios1{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    width: 100%;
+}
+.imgServicios2, .imgServicios3{
+    @extend .imgServicios1
+}
+
+/*---------------C O N T A C T O---------------*/       
+
+.textoContacto {
+    @include texto;
+    display: flex;
+    justify-content: center;
+}
+.titleContacto{
+    @include title;
+}
+
+
