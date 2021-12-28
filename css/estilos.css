@@ -1,7 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baumans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap");
+* {
+  margin: 0%;
+  padding: 0%; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+.homeContainer {
+  min-width: 100%;
+  background-image: url("../imagenes/pexels-stein-egil-liland-3374210.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+
+a:hover {
+  transform: scale(1.1); }
+
+@media screen and (max-width: 425px) {
+  .title {
+    font-size: 3.2em; }
+  .socialLinks {
+    width: 60%; } }
+
 /*---------------H E A D E R  Y  N A V---------------*/
 .logoHeader {
   display: flex;
@@ -10,27 +33,146 @@
   background-image: url("../imagenes/pexels-stein-egil-liland-3374210.jpg");
   background-size: cover;
   background-attachment: fixed; }
-
-.logo {
-  padding: .3em .3em .3em .3em;
-  border-radius: 50%;
-  height: 13em; }
+  .logoHeader .logo {
+    padding: .3em .3em .3em .3em;
+    border-radius: 50%;
+    height: 13em; }
 
 .navbar-nav, .navbar-brand {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Arvo', sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+/*---------------Q U I E N E S  S O M O S---------------*/
+.title {
+  display: flex;
+  font-size: 4.2em;
+  font-family: 'Baumans', sans-serif;
+  font-weight: 600;
+  justify-content: center;
+  margin-bottom: 1em; }
+
+#who {
+  margin-bottom: 1.5em;
+  background-color: #FFEDE1; }
+
+.who {
+  font-size: 2.5em;
+  font-family: 'Arima Madurai', sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+.whoTexto {
+  font-family: 'Arvo', sans-serif;
+  font-size: 1.2em;
+  text-align: center; }
+
+/*---------------N O V E D A D E S---------------*/
+#news {
+  margin-bottom: 1.5em;
+  background-color: #FFEDE1; }
+
+.news {
+  font-size: 2.5em;
+  font-family: 'Arima Madurai', sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center; }
+
+.listaNews1, .listaNews2, .listaNews3, .listaNews4 {
+  font-family: 'Arvo', sans-serif;
+  font-size: 1.2em;
+  text-align: center; }
+
+/*---------------C L I E N T E S---------------*/
+#clientes {
+  background-color: #AFCBFF;
+  margin-bottom: 1em; }
+
+.clientes {
+  font-size: 2.5em;
+  font-family: 'Arima Madurai', sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center; }
+
+.textoClientes {
+  font-family: 'Arvo', sans-serif;
+  font-size: 1.2em;
+  text-align: center; }
+
+/*---------------S E R V I C I O S---------------*/
+.contenedor {
+  background-color: #C0BCB5; }
+
+.serv1 {
+  background-color: #ED474A; }
+
+.serv2 {
+  background-color: #846075; }
+
+.serv3 {
+  background-color: #AF5D63; }
+
+.titleServicios {
+  display: flex;
+  font-size: 4.2em;
+  font-family: 'Baumans', sans-serif;
+  font-weight: 600;
+  justify-content: center;
+  margin-bottom: 1em;
+  background-color: #C0BCB5; }
+
+.subServicio, .subServicio2, .subServicio3 {
+  font-size: 2.5em;
+  font-family: 'Arima Madurai', sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  background-color: #C0BCB5; }
+
+.textoServ {
+  font-family: 'Arvo', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.imgServicios1, .imgServicios2, .imgServicios3 {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 100%; }
+
+/*---------------C O N T A C T O---------------*/
+.textoContacto {
+  font-family: 'Arvo', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+
+.titleContacto {
+  display: flex;
+  font-size: 4.2em;
+  font-family: 'Baumans', sans-serif;
+  font-weight: 600;
+  justify-content: center;
+  margin-bottom: 1em; }
+
 /*---------------F O O T E R---------------*/
 .foot {
   border-top: solid 2px #941414;
-  background-color: #000; }
+  background-color: #0A100D; }
 
 .social {
   color: #ffffff;
-  font-family: 'Abel', sans-serif;
   font-size: 2.5em;
+  font-family: 'Arima Madurai', sans-serif;
+  font-weight: 700;
   display: flex;
   justify-content: center; }
 
@@ -60,122 +202,33 @@
     height: 2em;
     line-height: 2em;
     text-align: center;
-    background: #0ea4be;
     color: #ffffff;
     border-radius: 50%; }
 
-@media screen and (max-width: 425px) {
-  .title {
-    font-size: 3.2em; }
-  .socialLinks {
-    width: 60%; } }
+.red--instagram {
+  background: #741699; }
+  .red--instagram:hover {
+    background: black; }
+    .red--instagram:hover .red__nombre {
+      color: #741699; }
 
-* {
-  margin: 0%;
-  padding: 0%; }
+.red--facebook {
+  background: #2956a3; }
+  .red--facebook:hover {
+    background: black; }
+    .red--facebook:hover .red__nombre {
+      color: #2956a3; }
 
-html {
-  width: 100%;
-  height: 100%; }
+.red--linkedin {
+  background: #0300b8; }
+  .red--linkedin:hover {
+    background: black; }
+    .red--linkedin:hover .red__nombre {
+      color: #0300b8; }
 
-.homeContainer {
-  min-width: 100%; }
-
-a:hover {
-  transform: scale(1.1); }
-
-/*---------------Q U I E N E S  S O M O S---------------*/
-.title {
-  display: flex;
-  font-size: 4.2em;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 600;
-  justify-content: center;
-  margin-bottom: 1em; }
-
-#who {
-  margin-bottom: 1.5em; }
-
-.who {
-  font-size: 2.5em;
-  font-family: 'Abel', sans-serif;
-  text-align: center; }
-
-.whoTexto {
-  font-family: 'Advent Pro', sans-serif;
-  font-size: 1.2em;
-  text-align: center; }
-
-/*---------------N O V E D A D E S---------------*/
-#news {
-  margin-bottom: 1.5em; }
-
-.news {
-  font-size: 2.5em;
-  font-family: 'Abel', sans-serif;
-  display: flex;
-  justify-content: center; }
-
-.listaNews1, .listaNews2, .listaNews3, .listaNews4 {
-  font-family: 'Advent Pro', sans-serif;
-  font-size: 1.2em;
-  text-align: center; }
-
-/*---------------C L I E N T E S---------------*/
-#clientes {
-  margin-bottom: 1em; }
-
-.clientes {
-  font-size: 2.5em;
-  font-family: 'Abel', sans-serif;
-  display: flex;
-  justify-content: center; }
-
-.textoClientes {
-  font-family: 'Advent Pro', sans-serif;
-  font-size: 1.2em;
-  text-align: center; }
-
-/*---------------S E R V I C I O S---------------*/
-.titleServicios {
-  display: flex;
-  font-size: 4.2em;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 600;
-  justify-content: center;
-  margin-bottom: 1em; }
-
-.subServicio, .subServicio2, .subServicio3 {
-  display: flex;
-  justify-content: center;
-  font-family: 'Abel', sans-serif;
-  font-size: 2.5em; }
-
-.textoServ {
-  font-family: 'Advent Pro', sans-serif;
-  font-size: 1.2em;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.imgServicios1, .imgServicios2, .imgServicios3 {
-  margin-bottom: 2em;
-  margin-top: 2em;
-  width: 100%; }
-
-/*---------------C O N T A C T O---------------*/
-.textoContacto {
-  font-family: 'Advent Pro', sans-serif;
-  font-size: 1.2em;
-  text-align: center;
-  display: flex;
-  justify-content: center; }
-
-.titleContacto {
-  display: flex;
-  font-size: 4.2em;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 600;
-  justify-content: center;
-  margin-bottom: 1em; }
+.red--pinterest {
+  background: #ce1231; }
+  .red--pinterest:hover {
+    background: black; }
+    .red--pinterest:hover .red__nombre {
+      color: #ce1231; }

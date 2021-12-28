@@ -1,0 +1,62 @@
+                               /*---------------F O O T E R---------------*/
+
+.foot{
+    border-top: solid 2px rgb(148, 20, 20);
+    background-color: #0A100D;
+}
+.social{
+    color: $color;
+    @include subtitle;
+                                
+}
+.socialLinks-container{
+    display: flex;
+    justify-content: center;
+}
+                            
+.textoSocial{
+    color: $color;
+    display: flex;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    justify-content: center;
+}
+.socialLinks{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding-left: 0;
+        li{
+            a{
+                text-decoration: none;
+                font-size: 1.5em;
+                width: 2em;
+                height: 2em;
+                line-height: 2em;
+                text-align: center;
+                color: $color;
+                border-radius: 50%;
+             }
+          }
+                                
+}
+$redes: (
+	instagram: #741699,
+	facebook: #2956a3,
+	linkedin: #0300b8,
+	pinterest: #ce1231,
+);
+@each $red, $color in $redes {
+    .red--#{$red} {
+        background: $color;
+        &:hover {
+            background: rgb(0, 0, 0);
+            .red__nombre {
+                color: $color;
+            }
+        }
+    }
+}

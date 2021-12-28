@@ -1,0 +1,10 @@
+                                /*---------------C O N T A C T O---------------*/       
+
+.textoContacto {
+    @include texto;
+    display: flex;
+    justify-content: center;
+}
+.titleContacto{
+    @include title;
+}

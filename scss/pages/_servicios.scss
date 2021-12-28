@@ -1,0 +1,40 @@
+
+/*---------------S E R V I C I O S---------------*/
+.contenedor{
+    background-color: #C0BCB5;
+}
+.serv1{
+    background-color: #ED474A; 
+}
+.serv2{
+    background-color: #846075;
+}
+.serv3{
+    background-color: #AF5D63;
+}
+.titleServicios{
+    @include title;
+    background-color: #C0BCB5;
+}
+.subServicio{
+    @include subtitle;
+    background-color: #C0BCB5;
+}
+.subServicio2, .subServicio3{
+    @extend .subServicio
+}
+.textoServ{
+
+    @include texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgServicios1{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    width: 100%;
+}
+.imgServicios2, .imgServicios3{
+    @extend .imgServicios1
+}
