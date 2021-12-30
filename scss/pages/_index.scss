@@ -25,7 +25,9 @@
     @include subtitle;
     
 }
-
+.fotoNews4{
+    max-width: 100%;
+}
 
 .listaNews{
     @include texto;
