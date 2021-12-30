@@ -12,27 +12,17 @@ html {
 
 .homeContainer {
   min-width: 100%;
-  background-image: url("../imagenes/pexels-stein-egil-liland-3374210.jpg");
-  background-size: cover;
-  background-attachment: fixed; }
+  background-color: black; }
 
 a:hover {
   transform: scale(1.1); }
-
-@media screen and (max-width: 425px) {
-  .title {
-    font-size: 3.2em; }
-  .socialLinks {
-    width: 60%; } }
 
 /*---------------H E A D E R  Y  N A V---------------*/
 .logoHeader {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../imagenes/pexels-stein-egil-liland-3374210.jpg");
-  background-size: cover;
-  background-attachment: fixed; }
+  background-color: black; }
   .logoHeader .logo {
     padding: .3em .3em .3em .3em;
     border-radius: 50%;
@@ -51,7 +41,8 @@ a:hover {
   font-family: 'Baumans', sans-serif;
   font-weight: 600;
   justify-content: center;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  width: 100%; }
 
 #who {
   margin-bottom: 1.5em;
@@ -82,7 +73,7 @@ a:hover {
   display: flex;
   justify-content: center; }
 
-.listaNews1, .listaNews2, .listaNews3, .listaNews4 {
+.listaNews {
   font-family: 'Arvo', sans-serif;
   font-size: 1.2em;
   text-align: center; }
@@ -124,6 +115,7 @@ a:hover {
   font-weight: 600;
   justify-content: center;
   margin-bottom: 1em;
+  width: 100%;
   background-color: #C0BCB5; }
 
 .subServicio, .subServicio2, .subServicio3 {
@@ -161,7 +153,8 @@ a:hover {
   font-family: 'Baumans', sans-serif;
   font-weight: 600;
   justify-content: center;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  width: 100%; }
 
 /*---------------F O O T E R---------------*/
 .foot {
@@ -232,3 +225,14 @@ a:hover {
     background: black; }
     .red--pinterest:hover .red__nombre {
       color: #ce1231; }
+
+@media screen and (max-width: 425px) {
+  .title {
+    padding-top: 1em;
+    font-size: 2.4em; }
+  .socialLinks {
+    width: 60%; }
+  .who, .news, .clientes {
+    font-size: 2.0em; }
+  .whoTexto, .listaNews, .textoClientes {
+    font-size: 1em; } }
