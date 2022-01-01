@@ -1,16 +1,5 @@
                                 /*---------------H E A D E R  Y  N A V---------------*/
 
-
-.logoHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:black;
-    .logo{
-        padding: .3em .3em .3em .3em;
-        width: 100%;
-    }
-}
 .navbar-nav{
     font-family: 'Arvo', sans-serif;
     font-size: 1.2rem;
@@ -19,4 +8,8 @@
 }
 .navbar-brand{
     @extend .navbar-nav
+}
+
+.imgHeader2{
+    max-width: 100%;
 }

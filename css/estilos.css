@@ -18,20 +18,14 @@ a:hover {
   transform: scale(1.1); }
 
 /*---------------H E A D E R  Y  N A V---------------*/
-.logoHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black; }
-  .logoHeader .logo {
-    padding: .3em .3em .3em .3em;
-    width: 100%; }
-
 .navbar-nav, .navbar-brand {
   font-family: 'Arvo', sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px; }
+
+.imgHeader2 {
+  max-width: 100%; }
 
 /*---------------Q U I E N E S  S O M O S---------------*/
 .title {
@@ -44,7 +38,8 @@ a:hover {
   width: 100%; }
 
 #who {
-  margin-bottom: 1.5em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   background-color: #FFEDE1; }
 
 .who {
@@ -60,9 +55,14 @@ a:hover {
   font-size: 1.2em;
   text-align: center; }
 
+.corteFondo {
+  background-image: url("../../imagenes/BEERNNING-0051.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 2em; }
+
 /*---------------N O V E D A D E S---------------*/
 #news {
-  margin-bottom: 1.5em;
   background-color: #FFEDE1; }
 
 .news {
@@ -82,8 +82,7 @@ a:hover {
 
 /*---------------C L I E N T E S---------------*/
 #clientes {
-  background-color: #AFCBFF;
-  margin-bottom: 1em; }
+  background-color: #AFCBFF; }
 
 .clientes {
   font-size: 2.5em;

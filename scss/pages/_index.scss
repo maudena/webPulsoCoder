@@ -4,7 +4,8 @@
     @include title;
 }
 #who{
-    margin-bottom: 1.5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     background-color: #FFEDE1;
 }
 .who{
@@ -14,11 +15,15 @@
 .whoTexto{
     @include texto;
 }
-
+.corteFondo{
+    background-image: url("../../imagenes/BEERNNING-0051.jpg");
+    background-size: cover;
+    background-attachment: fixed;;
+    height: 2em;
+}
                                 /*---------------N O V E D A D E S---------------*/
 
 #news{
-    margin-bottom: 1.5em;
     background-color: #FFEDE1;
 }
 .news{
@@ -37,7 +42,6 @@
 
 #clientes{
     background-color: #AFCBFF;
-    margin-bottom: 1em;
 }                              
 .clientes{
     @include subtitle;
