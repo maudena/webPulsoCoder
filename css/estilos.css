@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Baumans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
 * {
   margin: 0%;
   padding: 0%; }
@@ -19,9 +20,8 @@ a:hover {
 
 /*---------------H E A D E R  Y  N A V---------------*/
 .navbar-nav, .navbar-brand {
-  font-family: 'Arvo', sans-serif;
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
   letter-spacing: 1px; }
 
 .imgHeader2 {
@@ -30,22 +30,22 @@ a:hover {
 /*---------------Q U I E N E S  S O M O S---------------*/
 .title {
   display: flex;
-  font-size: 4.2em;
-  font-family: 'Baumans', sans-serif;
+  font-size: 4em;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   justify-content: center;
-  margin-bottom: 1em;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 #who {
-  padding-top: 3em;
+  padding-top: 7em;
   padding-bottom: 3em;
-  background-color: #FFEDE1; }
+  background-color: #fff; }
 
 .who {
   font-size: 2.5em;
-  font-family: 'Arima Madurai', sans-serif;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   text-align: center; }
@@ -56,19 +56,17 @@ a:hover {
   text-align: center; }
 
 .corteFondo {
-  background-image: url("../../imagenes/BEERNNING-0051.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  height: 2em; }
+  background-color: #000;
+  height: 1.5em; }
 
 /*---------------N O V E D A D E S---------------*/
 #news {
-  background-color: #FFEDE1; }
+  background-color: #fff; }
 
 .news {
   font-size: 2.5em;
-  font-family: 'Arima Madurai', sans-serif;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   display: flex;
   justify-content: center; }
 
@@ -80,14 +78,19 @@ a:hover {
   font-size: 1.2em;
   text-align: center; }
 
+.titleCarousel, .textoCarousel {
+  color: black; }
+
 /*---------------C L I E N T E S---------------*/
 #clientes {
-  background-color: #AFCBFF; }
+  background-color: #fff;
+  padding-top: 4em;
+  padding-bottom: 5em; }
 
 .clientes {
   font-size: 2.5em;
-  font-family: 'Arima Madurai', sans-serif;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   display: flex;
   justify-content: center; }
 
@@ -111,18 +114,17 @@ a:hover {
 
 .titleServicios {
   display: flex;
-  font-size: 4.2em;
-  font-family: 'Baumans', sans-serif;
+  font-size: 4em;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   justify-content: center;
-  margin-bottom: 1em;
   width: 100%;
   background-color: #C0BCB5; }
 
 .subServicio, .subServicio2, .subServicio3 {
   font-size: 2.5em;
-  font-family: 'Arima Madurai', sans-serif;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   background-color: #C0BCB5; }
@@ -150,11 +152,10 @@ a:hover {
 
 .titleContacto {
   display: flex;
-  font-size: 4.2em;
-  font-family: 'Baumans', sans-serif;
+  font-size: 4em;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   justify-content: center;
-  margin-bottom: 1em;
   width: 100%; }
 
 /*---------------F O O T E R---------------*/
@@ -165,8 +166,8 @@ a:hover {
 .social {
   color: #ffffff;
   font-size: 2.5em;
-  font-family: 'Arima Madurai', sans-serif;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   display: flex;
   justify-content: center; }
 

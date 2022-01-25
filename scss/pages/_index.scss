@@ -2,11 +2,13 @@
                                 /*---------------Q U I E N E S  S O M O S---------------*/
 .title{
     @include title;
+    text-align: center;
 }
 #who{
-    padding-top: 3em;
+    padding-top: 7em;
     padding-bottom: 3em;
-    background-color: #FFEDE1;
+    background-color: #fff;
+    
 }
 .who{
     @include subtitle;
@@ -16,15 +18,14 @@
     @include texto;
 }
 .corteFondo{
-    background-image: url("../../imagenes/BEERNNING-0051.jpg");
-    background-size: cover;
-    background-attachment: fixed;;
-    height: 2em;
+    background-color: #000;
+    height: 1.5em;
 }
                                 /*---------------N O V E D A D E S---------------*/
 
 #news{
-    background-color: #FFEDE1;
+    background-color: #fff;
+    
 }
 .news{
     @include subtitle;
@@ -36,12 +37,19 @@
 
 .listaNews{
     @include texto;
+
+}
+.titleCarousel, .textoCarousel{
+    color: black;
 }
 
                                 /*---------------C L I E N T E S---------------*/
 
 #clientes{
-    background-color: #AFCBFF;
+    background-color: #fff;
+    padding-top: 4em;
+    padding-bottom: 5em;
+    
 }                              
 .clientes{
     @include subtitle;
