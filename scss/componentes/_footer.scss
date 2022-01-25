@@ -44,16 +44,15 @@
                                 
 }
 $redes: (
-	instagram: #741699,
+	instagram: #882383,
 	facebook: #2956a3,
 	linkedin: #0300b8,
-	pinterest: #ce1231,
+	twitter: #4184ff,
 );
 @each $red, $color in $redes {
     .red--#{$red} {
         background: $color;
         &:hover {
-            background: rgb(0, 0, 0);
             .red__nombre {
                 color: $color;
             }

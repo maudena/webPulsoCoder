@@ -30,7 +30,7 @@ a:hover {
 /*---------------Q U I E N E S  S O M O S---------------*/
 .title {
   display: flex;
-  font-size: 4em;
+  font-size: 3em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   justify-content: center;
@@ -38,12 +38,12 @@ a:hover {
   text-align: center; }
 
 #who {
-  padding-top: 7em;
+  padding-top: 5em;
   padding-bottom: 3em;
   background-color: #fff; }
 
 .who {
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   display: flex;
@@ -64,7 +64,7 @@ a:hover {
   background-color: #fff; }
 
 .news {
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   display: flex;
@@ -84,11 +84,11 @@ a:hover {
 /*---------------C L I E N T E S---------------*/
 #clientes {
   background-color: #fff;
-  padding-top: 4em;
+  padding-top: 3em;
   padding-bottom: 5em; }
 
 .clientes {
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   display: flex;
@@ -100,34 +100,22 @@ a:hover {
   text-align: center; }
 
 /*---------------S E R V I C I O S---------------*/
-.contenedor {
-  background-color: #C0BCB5; }
-
-.serv1 {
-  background-color: #ED474A; }
-
-.serv2 {
-  background-color: #846075; }
-
-.serv3 {
-  background-color: #AF5D63; }
-
 .titleServicios {
   display: flex;
-  font-size: 4em;
+  font-size: 3em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   justify-content: center;
-  width: 100%;
-  background-color: #C0BCB5; }
+  width: 100%; }
 
 .subServicio, .subServicio2, .subServicio3 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   display: flex;
   justify-content: center;
-  background-color: #C0BCB5; }
+  padding-top: 3em;
+  font-size: 2em; }
 
 .textoServ {
   font-family: 'Arvo', sans-serif;
@@ -142,6 +130,15 @@ a:hover {
   margin-top: 2em;
   width: 100%; }
 
+.consulta {
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+  text-decoration: underline; }
+
 /*---------------C O N T A C T O---------------*/
 .textoContacto {
   font-family: 'Arvo', sans-serif;
@@ -152,7 +149,7 @@ a:hover {
 
 .titleContacto {
   display: flex;
-  font-size: 4em;
+  font-size: 3em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   justify-content: center;
@@ -165,7 +162,7 @@ a:hover {
 
 .social {
   color: #ffffff;
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   display: flex;
@@ -201,32 +198,24 @@ a:hover {
     border-radius: 50%; }
 
 .red--instagram {
-  background: #741699; }
-  .red--instagram:hover {
-    background: black; }
-    .red--instagram:hover .red__nombre {
-      color: #741699; }
+  background: #882383; }
+  .red--instagram:hover .red__nombre {
+    color: #882383; }
 
 .red--facebook {
   background: #2956a3; }
-  .red--facebook:hover {
-    background: black; }
-    .red--facebook:hover .red__nombre {
-      color: #2956a3; }
+  .red--facebook:hover .red__nombre {
+    color: #2956a3; }
 
 .red--linkedin {
   background: #0300b8; }
-  .red--linkedin:hover {
-    background: black; }
-    .red--linkedin:hover .red__nombre {
-      color: #0300b8; }
+  .red--linkedin:hover .red__nombre {
+    color: #0300b8; }
 
-.red--pinterest {
-  background: #ce1231; }
-  .red--pinterest:hover {
-    background: black; }
-    .red--pinterest:hover .red__nombre {
-      color: #ce1231; }
+.red--twitter {
+  background: #4184ff; }
+  .red--twitter:hover .red__nombre {
+    color: #4184ff; }
 
 @media screen and (max-width: 425px) {
   .title {
